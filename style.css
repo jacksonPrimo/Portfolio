@@ -1,0 +1,262 @@
+:root{
+    --primary: rgb(112,252,241);
+    --font-topico: 2.2rem;
+    --text-1: #ffffff;
+    --text-2: #80858B;
+    --sombra: #252E3B;
+    --cinza: #2a3443;
+    --dark: #1B222C;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.06em;
+    color: var(--text-1);
+}
+html{
+    scroll-behavior: smooth;
+}
+i{
+    color: var(--primary);
+}
+.menu_top{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(5px)
+}
+.menu_top ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+}
+.menu_top ul li a{
+    text-decoration: none;
+}
+.menu_top ul .nome{
+    margin-right: 20%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+main{
+    background: radial-gradient(50% 50% at 50% 50%, #2F3E52 27.6%, #202833 100%);
+    padding-top: 110px;
+    display: block;
+    height: auto;}
+main .topico{
+    display: flex;
+    align-items: center;
+    font-size: var(--font-topico);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+main .topico i{
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+main .div-topico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+main .div-topico .conteudo-topico{
+    display: flex;
+}
+main .intro{
+    font-size: 0.9em;
+    margin: 150px 0px 100px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+.intro div{
+    max-width: 40%;
+}
+.intro h1{
+    font-size: 3rem;
+}
+.intro h2{
+    font-size: 1rem;
+    color: var(--primary);
+}
+.intro p{
+    color: var(--text-2);
+}
+.intro button{
+    margin-top: 5px;
+    border: 2px solid var(--primary);
+    padding: 8px 0px;
+    color: var(--primary);
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 72%;
+    border-radius: 6px;
+    background-color: transparent;}
+.intro img{
+    height: 350px;
+    width: 350px;
+    background-color: transparent;}
+main .bg-dark{
+    background-color: var(--sombra);
+}
+main .sobre{
+    justify-content: center;
+    height: 850px;
+    background: url('./assets/fundo1.svg'), 
+                url('./assets/fundo2.svg');
+}
+main .sobre .conteudo-topico-sobre{
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    font-size: 1.8rem;
+}
+main .sobre .conteudo-topico-sobre div{
+    max-width: 50%;
+    height: 40%;
+}
+main .sobre .conteudo-topico-sobre .perfil{
+    text-align: center;
+    font-weight: bold;
+}
+main .sobre .conteudo-topico-sobre .perfil img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow:
+    0 0 0 10px rgba(112,252,241, 0.7),
+    0 0 0 15px rgba(112,252,241, 0.5),
+    0 0 0 20px rgba(112,252,241, 0.3)
+}
+main .sobre .conteudo-topico-sobre .perfil ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 3rem;
+}
+main .sobre .conteudo-topico-sobre .info h2{
+    font-size: 1.3rem;
+    margin: 10px 0px;
+    color: var(--text-1)
+}
+main .sobre .conteudo-topico-sobre .info p{
+    font-size: 1.3rem;
+    margin: 10px 0px;
+    color: var(--text-2)
+}
+main .skills{
+    padding-top: 80px;
+    background: url('./assets/fundo2.svg');
+    background-color: var(--cinza);
+    align-items: center;
+    justify-content: center;
+}
+main .skills .conteudo-topico-skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+main .skills .conteudo-topico-skills li{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .skills .conteudo-topico-skills li img{
+    width: 58px;
+    height: 73px;
+    margin: 0px 0px 18px 0px;
+}
+main .skills .conteudo-topico-skills li .barra{
+    width: 50%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #0004;
+}
+main .skills .conteudo-topico-skills li .barra div{
+    height: 100%;
+    border-radius: 5px;
+}
+#html{
+    width: 80%;
+    background-color: rgb(255, 156, 35);
+}
+#css{
+    width: 65%;
+    background-color: rgb(43, 43, 255);
+}
+#node{
+    width: 70%;
+    background-color: rgb(2, 163, 2);
+}
+#postgre{
+    width: 50%;
+    background-color: rgb(69, 112, 243);
+}
+#js{
+    width: 80%;
+    background-color: rgb(241, 241, 0);
+}
+main .laboratorio .conteudo-topico-lab{
+    height: 70%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+main .laboratorio .conteudo-topico-lab .div-atras{
+    height: 85%;
+    width: 35%;
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+main .laboratorio .conteudo-topico-lab .div-frente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px 0px 10px;
+    background-color: var(--cinza);
+    border-radius: 6px;
+    padding: 10px 5px;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: -8px -7px 20px 4px rgba(0,0,0,0.3);
+}
+main .laboratorio .conteudo-topico-lab .div-frente img{
+    width: 95%;
+    height: 55%;
+    border-radius: 5px;
+}
+main .contato .conteudo-topico-ctt{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+}
+main .contato .conteudo-topico-ctt div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 42%;
+    height: 40px;
+    margin: 20px 0px;
+}
+main .contato .conteudo-topico-ctt div i{
+    font-size: 2rem;
+    margin: 0px 15px;
+}
+footer{
+    text-align: center;
+    height: 70px;
+    background-color: var(--dark);
+}
