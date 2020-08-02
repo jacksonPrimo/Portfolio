@@ -14,6 +14,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1.06em;
     color: var(--text-1);
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -45,10 +46,10 @@ i{
     font-weight: bold;
 }
 main{
-    background: radial-gradient(50% 50% at 50% 50%, #2F3E52 27.6%, #202833 100%);
-    padding-top: 110px;
+    background-color: #202833;
     display: block;
-    height: auto;}
+    height: auto;
+}
 main .topico{
     display: flex;
     align-items: center;
@@ -71,11 +72,14 @@ main .div-topico .conteudo-topico{
     display: flex;
 }
 main .intro{
+    height: 120vh;
+    background: radial-gradient(50% 50% at 50% 50%, #2F3E52 27.6%, #202833 100%);
     font-size: 0.9em;
-    margin: 150px 0px 100px 0px;
     display: flex;
     justify-content: space-around;
-    align-items: center;}
+    align-items: center;
+    margin-bottom: -150px;
+}
 .intro div{
     max-width: 40%;
 }
@@ -103,20 +107,18 @@ main .intro{
     height: 350px;
     width: 350px;
     background-color: transparent;}
-main .bg-dark{
-    background-color: var(--sombra);
-}
 main .sobre{
     justify-content: center;
-    height: 850px;
-    background: url('./assets/fundo1.svg'), 
-                url('./assets/fundo2.svg');
+    height: 1260px;
+    background: url('./assets/fundo1.svg') no-repeat, 
+                url('./assets/fundo2.svg') no-repeat;
 }
 main .sobre .conteudo-topico-sobre{
     justify-content: space-around;
     align-items: center;
     height: 40%;
     width: 100%;
+    margin-bottom: 100px;
     font-size: 1.8rem;
 }
 main .sobre .conteudo-topico-sobre div{
@@ -155,8 +157,6 @@ main .sobre .conteudo-topico-sobre .info p{
 }
 main .skills{
     padding-top: 80px;
-    background: url('./assets/fundo2.svg');
-    background-color: var(--cinza);
     align-items: center;
     justify-content: center;
 }
@@ -256,7 +256,9 @@ main .contato .conteudo-topico-ctt div i{
     margin: 0px 15px;
 }
 footer{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 70px;
     background-color: var(--dark);
 }
