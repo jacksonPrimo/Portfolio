@@ -3,7 +3,7 @@ Este é um portfolio pessoal feito com o intuito de treinar meus conhecimentos e
 ## Autor
 * jackson A. Primo `<jackson.primo12@gmail.com>`
 ## Como utilizar
-para exdcutar o projeto não é necessario fazer instalação alguma, apenas abrir o arquivo index.html no navegador, o projeto não faz uso de arquivos css pré processados tal como sass, nem bibiotecas para criação de componentes tal como React.
+para executar o projeto não é necessario fazer instalação alguma, apenas abrir o arquivo index.html no navegador, o projeto não faz uso de arquivos css pré processados tal como sass, nem bibiotecas para criação de componentes tal como React.
 ## Como dar continuidade ao projeto
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
 ```shell
